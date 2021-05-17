@@ -56,11 +56,3 @@ typings/
 # dotenv environment variables file
 .env
 .env.test
-
-# lock-files
-package-lock.json
-yarn.lock
-
-# Build
-*/dist
-!.elasticbeanstalk/*.global.yml
