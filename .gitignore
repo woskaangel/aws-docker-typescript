@@ -62,5 +62,6 @@ package-lock.json
 yarn.lock
 
 # Build
+dist
 */dist
 !.elasticbeanstalk/*.global.yml
