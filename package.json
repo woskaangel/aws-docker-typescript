@@ -29,12 +29,14 @@
     "eslint-plugin-typescript": "^0.14.0"
   },
   "scripts": {
-    "start": "",
+    "start": "node index.js",
     "dev": "sh script/run-start-local.sh",
     "build": "sh script/run-build.sh",
     "test": "sh script/run-test.sh",
     "lint": "sh script/run-lint.sh",
     "format": "sh script/run-format.sh",
-    "test:all": "sh script/run-format.sh && sh script/run-lint.sh && sh script/run-test.sh"
+    "test:all": "sh script/run-format.sh && sh script/run-lint.sh && sh script/run-test.sh",
+    "docker:build": "sh script/run-docker-build.sh",
+    "docker:push": "sh script/run-docker-push.sh"
   }
 }

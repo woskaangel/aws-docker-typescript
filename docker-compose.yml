@@ -1,0 +1,15 @@
+version: '3'
+services: 
+  nginx:
+    image: "nginx"
+    volumes:
+      - "/var/app/current/log/nginx"
+  api:
+    image: "159586998762.dkr.ecr.ap-northeast-2.amazonaws.com/docker-test"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "8000:8000"

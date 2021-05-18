@@ -1,0 +1,14 @@
+{
+  "AWSEBDockerrunVersion": 1,
+  "Logging": "/tmp/sample-app",
+  "Image": {
+    "Name": "159586998762.dkr.ecr.ap-northeast-2.amazonaws.com/docker-test",
+    "Update": "false"
+  },
+  "Ports": [
+    {
+      "ContainerPort": 8080,
+      "HostPort": 8000
+    }
+  ]
+}
